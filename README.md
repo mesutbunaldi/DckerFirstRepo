@@ -1,2 +1,2 @@
 ###First Docker Exercise
-```docker images, docker-compose, run, rm , down , up
+```docker images, docker-compose, run, rm , down , up```
