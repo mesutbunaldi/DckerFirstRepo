@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+    web:
+        image: nginx
+        ports:
+            - "8080:80"
+
+    cache:
+        image: redis
+        ports:
+            - "9999:6379"
+    
+    db:
+        image: postgres:latest
+        ports: 
+            - "5432:5432"
+
+    app:
+        image: mesut/first
+        command: tail -f /dev/null
